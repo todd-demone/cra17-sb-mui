@@ -1,15 +1,15 @@
 import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
-import { theme1, theme2 } from "../src/theme";
+import { darkTheme, lightTheme } from "../src/theme";
 
 export const globalTypes = {
   theme: {
     name: "Theme",
     description: "Global theme for components",
-    defaultValue: "theme1",
+    defaultValue: "darkTheme",
     toolbar: {
       icon: "circlehollow",
-      items: ["theme1", "theme2"],
+      items: ["darkTheme", "lightTheme"],
       showName: true,
       dynamicTitle: true,
     },
@@ -18,10 +18,10 @@ export const globalTypes = {
 
 const getTheme = (themeName) => {
   switch (themeName) {
-    case "theme2":
-      return theme2;
+    case "lightTheme":
+      return lightTheme;
     default:
-      return theme1;
+      return darkTheme;
   }
 };
 
