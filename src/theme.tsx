@@ -3,6 +3,7 @@ import { createTheme } from "@mui/material/styles";
 
 export const theme1 = createTheme({
   palette: {
+    mode: "dark",
     primary: {
       main: "#556cd6",
     },
@@ -12,9 +13,9 @@ export const theme1 = createTheme({
     error: {
       main: red.A400,
     },
-    background: {
-      default: "#000",
-    },
+    // background: {
+    //   default: "#000",
+    // },
   },
 });
 
