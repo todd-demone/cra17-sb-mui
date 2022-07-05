@@ -1,5 +1,5 @@
 import React from "react";
 
 export function App() {
-  return <div>AlphaBook</div>;
+  return <div>CRA17-SB-MUI</div>;
 }
